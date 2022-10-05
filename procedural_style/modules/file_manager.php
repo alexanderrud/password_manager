@@ -55,7 +55,7 @@ function createNewFile(string $passwordsDirectory): string
     $file = $passwordsDirectory . DIRECTORY_SEPARATOR . "{$filename}.txt";
 
     if (file_exists($file)) {
-        print_r("File with provided name already exist!\n");
+        print("File with provided name already exist!\n");
 
         return createNewFile($passwordsDirectory);
     }

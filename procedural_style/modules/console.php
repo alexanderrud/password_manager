@@ -8,7 +8,7 @@ function generatePassword(): void
     $password = trim($inputValue);
 
     if ($password === '') {
-        print_r("You did not pass string for password! \n1. Generate again\n2. Exit");
+        print("You did not pass string for password! \n1. Generate again\n2. Exit");
 
         $inputValue = readline("\nYour option:");
 
